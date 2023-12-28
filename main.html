@@ -1,16 +1,80 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Classes</title>
+  <style>
+
+:root {
+  background-color: rgb(135, 206, 235);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+    
+     .f1:first-child{
+      color: white;
+      background-color: black;
+     }
+     .f2:nth-child(2){
+      color: black;
+     }
+    .f3>p:last-child{
+      color: red;
+    }   
+    .order{
+      width: 50px;
+      padding: 10px;
+      font-size: 22px;
+      
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+    }
+    ul li{
+      width: 50px;
+      padding: 10px;
+      background-color: gray;
+    }
+    ul li:first-child{
+      font-size: 22px;
+    }
+    ul li:last-child{
+      font-size: 22px;
+    }
+    ul li:nth-child(odd){
+      background-color: white;
+    }
+    ul li:nth-child(3){
+      background-color: pink;
+    }
+    
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+<article>
+<div class="f1">
+  <p>First Child</p>
+</div>
+<div class="f2">
+  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quo rem ipsa dolorum unde fuga odit soluta, deserunt culpa aliquid architecto impedit nemo quae voluptate magnam est repellendus magni itaque.</p>
+</div>
+<div class="f3">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi itaque, debitis autem minima suscipit quibusdam dolorum. Neque suscipit eaque culpa in, adipisci atque praesentium, quos amet, aut reprehenderit quisquam molestias.</p>
+</div>
+</article>
 
+<ul>
+
+  <li>first Item</li>
+  <li>Second Item</li>
+  <li>Third Item</li>
+  <li>Four Item</li>
+  <li>Five Item</li>
+</ul>
 </body>
-
 </html>
