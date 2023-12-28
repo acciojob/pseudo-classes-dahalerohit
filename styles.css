@@ -5,14 +5,14 @@
 
 
     
-     p:first-child{
+     article p:first-child{
       color: white;
       background-color: black;
      }
-     p:nth-child(2){
+     article p:nth-child(2){
       color: black;
      }
-    p:last-child{
+    article p:last-child{
       color: red;
     }   
     
